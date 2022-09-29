@@ -39,8 +39,7 @@ function main() {
   function agregarElementosLi() {
     cosasQueAprendimos.forEach(element => {
       nuevoLiEl = document.createElement("li");
-      textoNuevoLiEl = document.createTextNode(element.tema);
-      nuevoLiEl.append(textoNuevoLiEl);
+      nuevoLiEl.textContent = element.tema;
       if (element.class != "") {
         nuevoLiEl.classList.add(element.class);
       }
